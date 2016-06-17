@@ -6,49 +6,53 @@
 *******GENERAL STYLING********
 ==============================*/
 * {
-	font-family : 'Futura', 'Helvetica', Arial, sans-serif !important;
-	margin : 0;
-	box-sizing : border-box;
+  font-family : 'Futura', 'Helvetica', Arial, sans-serif !important;
+  margin : 0;
+  box-sizing : border-box;
 }
 
 html, 
 body{
-	height : 100%;
+  height : 100%;
 }
 
 body{
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 .container-fluid.page-wrapper{
-	min-height : 100%;
+  min-height : 100%;
 }
 
 .pages{
-	margin : 0 auto !important;
-	width : 90%;
-	padding : 5px;
+  margin : 0 auto !important;
+  width : 90%;
+  padding : 5px;
 }
 
 .page-wrapper:after{
-	content : "";
-	display : block;
+  content : "";
+  display : block;
 }
 
 .site-footer, 
 .page-wrapper:after{
-	height : 50px;
+  height : 50px;
 }
 
 .site-footer{
-	background : rgb(31, 73, 70);
-	color : #fffeea;
-	text-align : center;
-	padding : 15px 0 3px 0;
-	margin: -50px 0 auto;
+  background : rgb(31, 73, 70);
+  color : #fffeea;
+  text-align : center;
+  padding : 15px 0 3px 0;
+  margin: -50px 0 auto;
 }
 #site-navigation{
-	background : rgb(31, 73, 70);
+  background : rgb(31, 73, 70);
+}
+
+#navbar li a{
+  text-transform : uppercase;
 }
 
 
@@ -56,18 +60,18 @@ h1,
 h2,
 h3,
 p{
-	color : rgb(52, 73, 94);
+  color : rgb(52, 73, 94);
 }
 
 h1,
 .navbar-brand,
 .site-footer{
-	text-transform : uppercase !important;
-	letter-spacing : 0.125em !important;
+  text-transform : uppercase !important;
+  letter-spacing : 0.125em !important;
 }
 
 p{
-	font-size : 1.125em;
+  font-size : 1.125em;
 }
 
 
