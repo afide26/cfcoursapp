@@ -1,0 +1,59 @@
+/*======================================
+******IMAGE CAROUSEL STYLING**********
+======================================*/
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+
+div.carousel{
+  margin-top : -5px;
+  margin-left : -15px !important;
+  margin-right : -15px !important;
+}
+
+div.item img{
+  padding-bottom : 100px;
+}
+
+ol.carousel-indicators{
+  margin-bottom : 10px;
+}
+
+div.carousel-caption{
+  padding-top : 20px;
+}
+div.carousel-caption>h3{
+  text-transform : uppercase;
+  font-weight : 700;
+  color : rgb(31, 73, 70);
+  letter-spacing : 0.1em;
+  margin-top : 20px;
+  font-size : 2em;
+}
+
+div.carousel-caption>p{
+  font-size : 1.5em;
+  color : rgb(31, 73, 70);
+  margin-top : 20px;
+}
+
+ol.carousel-indicators li{
+  background-color : rgba(58, 63, 62, 1.95);
+  border : 2px solid rgb(31, 73, 70);
+}
+
+.carousel-control.left,
+.carousel-control.right{
+  background-image : none !important;
+  color : rgb(31, 73, 70);
+}
+
+#carousel-example-generic{
+  margin-bottom : 10px;
+}
+
+.active img{
+  opacity : 0.9;
+}
+
+
