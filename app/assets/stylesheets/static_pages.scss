@@ -1,6 +1,12 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*==================*/
+/*Color variables*/
+/*===================*/
+$lightred:rgb(255, 103, 70);
+$textColor : #fffeea;
+$wideRow: rgb(31, 73, 70);
 
 /*==============================
 *******GENERAL STYLING********
@@ -24,6 +30,9 @@ body{
   min-height : 100%;
 }
 
+i {
+  color : $textColor;
+}
 .pages{
   margin : 0 auto !important;
   width : 90%;
@@ -53,6 +62,7 @@ body{
 
 #navbar li a{
   text-transform : uppercase;
+  color : $textColor !important;
 }
 
 
@@ -68,6 +78,9 @@ h1,
 .site-footer{
   text-transform : uppercase !important;
   letter-spacing : 0.125em !important;
+}
+.navbar-brand{
+  color : $textColor !important;;
 }
 
 p{

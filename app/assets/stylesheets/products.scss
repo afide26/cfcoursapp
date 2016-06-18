@@ -31,6 +31,44 @@ tr.wideRow{
   color : $lightred !important;
 }
 
+/*======================
+PRODUCTS INDEX STYLING
+======================*/
+div.col-md-4:nth-child(3n+1){
+  clear : both;
+  margin-bottom : 10px;
+  p{
+    font-size : 1.2em;
+    line-height : 1.1em;
+  }
+}
+div.product-list img{
+  width : 80%;
+  margin : 0 auto;
+}
+
+div.actions{
+  width : 95%;
+  margin : 0 auto;
+  text-align : center;
+  padding : 0;
+  .btn{
+    margin : 0 auto;
+  }
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
 /*===============
 Button Styling

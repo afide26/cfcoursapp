@@ -1,23 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<div class="pages">
-  <h2>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </h2>
+<div class="container">
+  <div class="row">
+    <h2><strong>Name:</strong><%= @product.name %></h2>
+    <hr class="style-one">
+    <p><strong>Colour:</strong><%= @product.colour %></p>
+    <div class="col-sm-3 product-list">
+      <%= image_tag(@product.image_url) %>
+    </div>
+    <div class="col-sm-9">
+      <%= simple_format(@product.description) %>
+    </div>
+    <div class="actions">
+      <%= link_to edit_product_path(@product), class:"btn btn-warning btn-xs", role:"button" do %>
+        <i class="glyphicon glyphicon-wrench"></i> Update
+      <% end %> |
 
-  <p>
-    <strong>Description:</strong>
-    <%= simple_format(@product.description) %>
-  </p>
-
-  <p>
-    <strong>Image url:</strong>
-    <%= @product.image_url %>
-  </p>
-
-  <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-warning btn-xs", role:"button" %> |
-  <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
-    <i class="glyphicon glyphicon-chevron-left"></i> Back
-  <% end %>
+      <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
+        <i class="glyphicon glyphicon-chevron-left"></i> Back
+      <% end %>
+    </div>
+    <hr class="style-one">
+  </div>
 </div>
