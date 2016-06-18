@@ -1,0 +1,47 @@
+/*Place all the styles related to the products controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+
+/*==================*/
+/*Color variables*/
+/*===================*/
+$lightred:rgb(255, 103, 70);
+$textColor : #fffeea;
+$wideRow: rgb(31, 73, 70);
+
+
+/*==================*/
+/*Index Page Styling*/
+/*==================*/
+th {
+  text-align : center;
+  text-transform : uppercase;
+  letter-spacing : 0.15em;
+  color : $textColor !important;
+  font-weight : 100;
+}
+
+tr.wideRow{
+  background-color : $wideRow !important;
+}
+.form-group {
+  text-transform : uppercase;
+  letter-spacing : 0.15em;
+  color : $lightred !important;
+}
+
+
+/*===============
+Button Styling
+===============*/
+
+a[role="button"], 
+.button{
+  text-transform : uppercase;
+  letter-spacing : 0.05em;
+  border-radius : 15px;
+  padding : 2px 9px 2px 9px;
+  color : $textColor !important;
+  margin-bottom : 5px;
+}

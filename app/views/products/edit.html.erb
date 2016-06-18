@@ -1,0 +1,12 @@
+<div class="pages">
+  <h1>Editing Product</h1>
+
+  <%= render 'form' %>
+
+  <%= link_to @product, class:"btn btn-info btn-xs", role:"button" do %> 
+    <i class="glyphicon glyphicon-eye-open"></i> Show
+  <% end %> |
+  <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
+    <i class="glyphicon glyphicon-chevron-left"></i> Back
+  <% end %>
+</div>

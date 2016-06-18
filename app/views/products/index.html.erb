@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<div class="pages">
+  <h1>Bike Berlin Stocks</h1>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr class="wideRow">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image url</th>
+        <th colspan="3">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= simple_format(product.description) %></td>
+          <td><%= product.image_url %></td>
+          <td>
+            <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
+              <i class="glyphicon glyphicon-eye-open"></i> Show
+            <% end %>
+          </td>
+          <td>
+            <%= link_to edit_product_path(product), class:"btn btn-warning btn-xs", role:"button" do %>
+              <i class="glyphicon glyphicon-wrench"></i> Edit
+            <% end %>
+          </td>
+          <td>
+            <%= link_to product, class:"btn btn-danger btn-xs", role:"button", method: :delete, data: { confirm: 'Are you sure?' } do%>
+              <i class="glyphicon glyphicon-trash"></i> Trash
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to new_product_path, class:"btn btn-success btn-xs", role:"button" do %>
+    <i class="glyphicon glyphicon-plus"></i> New Product
+  <% end %>
+
+</div>
