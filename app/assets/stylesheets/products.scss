@@ -73,7 +73,11 @@ hr.style-two {
 /*===============
 Button Styling
 ===============*/
-
+div.pull-right{
+  a[role="button"]{
+    background-color : $wideRow;
+  }
+}
 a[role="button"], 
 .button{
   text-transform : uppercase;
