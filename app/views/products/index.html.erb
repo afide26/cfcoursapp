@@ -12,6 +12,9 @@
     <div class="col-sm-2 col-md-4 product-list">
       <%= image_tag(product.image_url, class:"img-responsive") %>
       <h2><%= product.name %></h2>
+      <% if product.colour.present? %>
+      <h3>Colour:<%= product.colour %></h3>
+      <% end %>
       <p><%= simple_format(truncate(product.description, length: 300, omission:'....(continued)')) %></p>
       <hr class="style-two">
       <div class="actions">
