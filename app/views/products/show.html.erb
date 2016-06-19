@@ -7,6 +7,9 @@
     <p><strong>Colour:</strong><%= @product.colour %></p>
     <div class="col-sm-3 product-list">
       <%= image_tag(@product.image_url) %>
+      <div class="price">
+        <h4 class="text-center">Price: <%= number_to_currency(@product.price) %></h4>
+      </div>
     </div>
     <div class="col-sm-9">
       <%= simple_format(@product.description) %>
@@ -20,6 +23,6 @@
         <i class="glyphicon glyphicon-chevron-left"></i> Back
       <% end %>
     </div>
-    <hr class="style-one">
   </div>
+  <hr class="style-one">
 </div>

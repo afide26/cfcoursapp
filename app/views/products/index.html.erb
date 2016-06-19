@@ -16,6 +16,9 @@
       <h3>Colour:<%= product.colour %></h3>
       <% end %>
       <p><%= simple_format(truncate(product.description, length: 300, omission:'....(continued)')) %></p>
+      <div class="price">
+        <h3 class="text-center">Price: <%= number_to_currency(product.price) %></h3>
+      </div>
       <hr class="style-two">
       <div class="actions">
         <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
