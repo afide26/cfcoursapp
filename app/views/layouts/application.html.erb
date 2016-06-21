@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-<%= render 'layouts/head' %>
+<head>
+  <title>Cfcourseapp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+
 <body>
-<%= render 'layouts/nav' %>
+<%= render "layouts/nav" %>
 
 <div class="container-fluid page-wrapper">
   <%= yield %>
 </div>
 
-<%= render 'layouts/footer' %>
+<%= render "layouts/footer" %>
 </body>
 </html>
