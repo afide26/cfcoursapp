@@ -10,7 +10,9 @@ class StaticPagesController < ApplicationController
   end
 
   def faq
-    @products = Product.all
+    @product2 = Product.find(2)
+    @product3 = Product.find(3)
+    @product4 = Product.find(3)
   end
   def landing_page
     @products = Product.limit(4)
