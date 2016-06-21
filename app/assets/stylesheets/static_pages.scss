@@ -87,11 +87,45 @@ p{
   font-size : 1.125em;
 }
 
+a{
+  text-decoration : none;
+}
 
 div.item > img{
   width : 680px;
 }
 
+
+/*==============================
+*******FAQ PAGE STYLING********
+==============================*/
+
+.panel-heading{
+  background-color : $wideRow !important;
+}
+
+.panel-title a:hover,
+.panel-titel a:active{
+  text-decoration : none;
+}
+
+.panel-body{
+  ul{
+    float : left;
+  }
+  img {
+    float : right;
+    width : 35%;
+    margin : 0 auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  
+}
 
 
 

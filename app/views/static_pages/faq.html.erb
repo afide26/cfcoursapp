@@ -2,5 +2,69 @@
   <h1>Frequently Asked Questions</h1>
 
   <h3>A collection of questions we receive daily answered for your convenience:</h3>
+          <!-- Accordion -->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <!-- Background FAQ -->
+      <div class="panel panel-primary">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span class="glyphicon glyphicon-plus"></span> Do you have any other branches?<span class="glyphicon glyphicon-forward pull-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body faq-body">
+            <p>No we don't we only have one branch so far but we are planning on having more branches in the future.</p>
+            <%= image_tag(@products[3].image_url, class:"img-responsive") %>
+          </div>
+        </div>
+      </div><!--End of Background FAQ-->
+
+      <!-- Skills and Interest FAQ -->
+      <div class="panel panel-primary">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+             <span class="glyphicon glyphicon-plus"></span> What types of bicycles do you sell?<span class="glyphicon glyphicon-forward pull-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body faq-body">
+          
+            <h3>We sell several varieties of bicycles for all ages.</h3>
+            <p>
+              Some of our most recent stocks include:
+            </p>
+            <ul>
+              <li>Mountain Bikes</li>
+              <li>Racing Bikes</li>
+              <li>BMX</li>
+              <li>Tandem Bikes</li>
+              <li>Even bikes for toddlers</li>
+            </ul>
+            <%= image_tag(@products[1].image_url, class:"img-responsive") %>
+          </div>
+        </div>
+      </div><!--End of Skills and Interests FAQ-->
+
+      <!-- Other Skills -->
+      <div class="panel panel-primary">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <span class="glyphicon glyphicon-plus"></span> Price Range: <span class="glyphicon glyphicon-forward pull-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body faq-body">
+            <p>Our bicycles range from very affordable to the more expensive range. The only guarantee we can give you is that even our top ranges are more affordable compared to the prices offered by our competitors. If you can show us the same model sold elsewhere at a cheaper price, we'll beat that price by 10%! That's our guarantee.</p>
+            <%= image_tag(@products[4].image_url, class:"img-responsive") %>
+          </div>
+        </div>
+      </div><!--End of Other Skills-->
+    </div><!--End of Accordion -->
 </div>
 

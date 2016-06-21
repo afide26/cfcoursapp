@@ -1,47 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Cfcourseapp</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
-</head>
+<%= render 'layouts/head' %>
 <body>
-<nav id="site-navigation" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to root_path, class:"navbar-brand" do%>
-        <i class="glyphicon glyphicon-home" aria-hidden="true"></i> Bike Berlin
-      <% end %> 
-      <a href=""></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= nav_link("Products", products_path) %></li>
-        <li><%= nav_link("FAQ", faq_path) %></li>
-        <li><%= nav_link("About", about_path) %></li>
-        <li><%= nav_link("Contact", contact_path) %></li>     
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
+<%= render 'layouts/nav' %>
 
 <div class="container-fluid page-wrapper">
   <%= yield %>
 </div>
 
-<footer class="site-footer">
-  &copy; 2016 Bike Berlin &#xb7; Demo site only 
-</footer>
+<%= render 'layouts/footer' %>
 </body>
 </html>

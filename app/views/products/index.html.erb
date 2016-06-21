@@ -1,38 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="container">
+<div class="container product-container">
   <div class="pull-right">
     <%= link_to new_product_path, class:"btn btn-primary btn-xs", role:"button" do %>
       <i class="glyphicon glyphicon-plus"></i> Add New Product
     <% end %>
   </div>
   <div class="row">
-    <% @products.each do |product| %>
-    <div class="col-sm-2 col-md-4 product-list">
-      <%= image_tag(product.image_url, class:"img-responsive") %>
-      <h2><%= product.name %></h2>
-      <% if product.colour.present? %>
-      <h3>Colour:<%= product.colour %></h3>
-      <% end %>
-      <p><%= simple_format(truncate(product.description, length: 300, omission:'....(continued)')) %></p>
-      <div class="price">
-        <h3 class="text-center">Price: <%= number_to_currency(product.price) %></h3>
-      </div>
-      <hr class="style-two">
-      <div class="actions">
-        <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-eye-open"></i> Show
-        <% end %> | 
-        <%= link_to edit_product_path(product), class:"btn btn-warning btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-wrench"></i> Edit
-        <% end %> |
-        <%= link_to product, class:"btn btn-danger btn-xs", role:"button", method: :delete, data: { confirm: 'Are you sure?' } do%>
-          <i class="glyphicon glyphicon-trash"></i> Trash
-        <% end %> 
-      </div>
-      <hr class="style-two">
-    </div>
-    <% end %>
+  <%= render @products %>
   </div>
 </div>

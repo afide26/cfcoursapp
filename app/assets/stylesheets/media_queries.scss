@@ -14,5 +14,37 @@ IPHONE 5 to IPHONE 6 PORTRAIT
     }
   }
 
-}
+  .panel-title a{
+    font-size : .7em;
+    letter-spacing : 0;
+    margin-left : -10px;
+  }
 
+  a span.glyphicon-forward{
+    font-size : .7em;
+  }
+  .panel-body{
+    img{
+      display : none;
+    }
+  }
+
+}
+/*=============================
+      IPAD PORTRAIT
+=============================*/
+@media screen and (width: 768px){
+
+    div.col-sm-2.product-list{
+       float : left;
+      width : 44%;
+      margin : 20px 0 20px 30px;
+      p{
+        font-size : 1.2em;
+        line-height : 1.1em;
+      }
+    }
+    div.col-sm-2.product-list:nth-child(3n+0){
+      clear : both;
+    }
+}
