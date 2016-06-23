@@ -10,6 +10,10 @@ IPHONE 5 to IPHONE 6 PORTRAIT
 =============================*/
 @media screen and (min-width: 320px) and (max-width: 437px){
 
+  .product-list{
+    width : 100% !important;
+    margin : 0 auto;
+  }
 
   .panel-title a{
     font-size : .7em;
@@ -67,14 +71,23 @@ IPHONE 5 to IPHONE 6 PORTRAIT
 /*=============================
       IPAD PORTRAIT
 =============================*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
     body{
-      padding-top : 35px !important;
+      padding-top : 50px !important;
+    }
+
+    div.product-container{
+      width : 95% !important;
+    }
+
+    div.row{
+      width : 100%;
+      margin : 0 auto;
     }
     div.col-sm-2.product-list{
-       float : left;
-      width : 44%;
-      margin : 20px 0 20px 30px;
+      float : left;
+      width : 50%;
+      margin : 0 auto;
       p{
         font-size : 1.2em;
         line-height : 1.1em;

@@ -8,8 +8,8 @@
   <div class="price">
     <h3 class="text-center">Price: <%= number_to_currency(product.price) %></h3>
   </div>
-  <hr class="style-two">
-  <div class="actions">
+  <hr class="style-two visible-lg">
+  <div class="actions visible-lg">
     <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
       <i class="glyphicon glyphicon-eye-open"></i> Show
     <% end %> | 
@@ -20,5 +20,5 @@
       <i class="glyphicon glyphicon-trash"></i> Trash
     <% end %> 
   </div>
-  <hr class="style-two">
+  <hr class="style-two visible-lg">
 </div>
