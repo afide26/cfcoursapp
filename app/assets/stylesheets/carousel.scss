@@ -5,6 +5,13 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 
+/*==================*/
+/*Color variables*/
+/*===================*/
+$lightred:rgb(255, 103, 70);
+$textColor : #fffeea;
+$wideRow: rgb(31, 73, 70);
+
 div.carousel{
   margin-top : -5px;
   margin-left : -15px !important;
@@ -40,12 +47,6 @@ div.carousel-caption>h4{
   font-size : 1.5em;
 }
 
-div.carousel-caption>p{
-  font-size : 1.5em;
-  color : rgb(31, 73, 70);
-  margin-top : 20px;
-}
-
 ol.carousel-indicators li{
   background-color : rgba(58, 63, 62, 1.95);
   border : 2px solid rgb(31, 73, 70);
@@ -63,6 +64,21 @@ ol.carousel-indicators li{
 
 .active img{
   opacity : 0.9;
+}
+
+.item{
+  .carousel-caption p{
+    font-size : 1.1em !important;
+    color : $textColor !important;
+    margin-top : 5px !important;
+    margin-bottom : 5px !important;
+    background-color : $wideRow !important;
+  }
+  .carousel-caption h4{
+    font-size : 1em !important;
+    margin-top : 5px !important;
+    margin-bottom : 1px !important;
+  }
 }
 
 

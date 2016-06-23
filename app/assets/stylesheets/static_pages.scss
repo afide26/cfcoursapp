@@ -37,7 +37,16 @@ i {
   margin : 0 auto !important;
   width : 90%;
   padding : 5px;
+  h2{
+    text-transform : uppercase;
+    letter-spacing :0.25em;
+  }
 }
+
+.page-header{
+  margin : 5px auto;
+}
+
 
 .page-wrapper:after{
   content : "";
