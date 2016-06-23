@@ -26,18 +26,6 @@ IPHONE 5 to IPHONE 6 PORTRAIT
     }
   }
 
-/*  .page-header h1{
-    font-size : 1.5em !important;
-  }
-  .item img{
-    border : 1px solid red;
-    width : 100% !important;
-    padding-top: 70px;
-  }
-
-  .carousel-caption h4{
-     font-size : 1.2em !important;
-  }*/
     .page-header{
         padding-bottom : 2px;
         h2{
@@ -50,10 +38,8 @@ IPHONE 5 to IPHONE 6 PORTRAIT
       padding-top: 30px !important;
       padding-bottom : 30px !important;
       margin-bottom : 50px !important;
-      border : 1px dashed black;
     }
     .carousel-caption {
-      border : 2px dashed red;
       padding : 0 !important;
       margin-top : 80px;
     }
@@ -70,13 +56,11 @@ IPHONE 5 to IPHONE 6 PORTRAIT
         margin-top : 5px !important;
         margin-bottom : 15px !important;
         background-color : $wideRow !important;
-        border : 1px solid red;
       }
       .carousel-caption h4{
         font-size : 1em !important;
         margin-top : 15px !important;
         margin-bottom : 1px !important;
-        border : 1px solid red;
       }
     }
 }
