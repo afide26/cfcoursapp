@@ -71,6 +71,8 @@ ol.carousel-indicators li{
     font-size : 1.1em !important;
     color : $textColor !important;
     margin-top : 5px !important;
+    text-transform : uppercase;
+    letter-spacing : 0.25em;
     margin-bottom : 5px !important;
     background-color : $wideRow !important;
   }
