@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'about'   => 'static_pages#about'
 
-  get 'index' => 'static_pages#index'
+  get 'index'   => 'static_pages#index'
 
   get 'contact' => 'static_pages#contact'
 

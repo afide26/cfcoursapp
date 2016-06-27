@@ -15,14 +15,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-      <div class="item<%= " active" if product == @products.first %>">
-        <%= image_tag(product.image_url, class: "img-responsive center-block") %>
-        <br/>
-        <br/>
-        <div class="carousel-caption">
-          <h4><%= product.name %></h4>
-          <p>Price: <%= number_to_currency(product.price) %></p>
-        </div>
+       
+          <div class="item<%= " active" if product == @products.first %>">
+            <%= link_to product do %>
+              <%= image_tag(product.image_url, class: "img-responsive center-block") %>
+              <br/>
+              <br/>
+              <div class="carousel-caption">
+                <h4><%= product.name %></h4>
+                <p>Price: <%= number_to_currency(product.price) %></p>
+              </div>
+            <% end %>
           </div>
       <% end %>
     </div>

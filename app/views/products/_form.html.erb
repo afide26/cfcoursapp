@@ -32,6 +32,6 @@
     <%= f.text_field:image_url, class:"form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit role:"button", class:"btn btn-primary button btn-xs" %>
+    <%= f.submit(@product.new_record? ? 'New Bicycle': 'Update Details', role:"button", class:"btn btn-primary button btn-xs") %>
   </div>
 <% end %>
