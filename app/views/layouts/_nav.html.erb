@@ -1,5 +1,5 @@
 <nav id="site-navigation" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid site-nav-width">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -16,6 +16,15 @@
         <li><%= nav_link("Products", products_path) %></li>
         <li><%= nav_link("FAQ", faq_path) %></li>
         <li><%= nav_link("Contact", contact_path) %></li>   
+        <li>
+          <%= form_tag("/products", method: "get", class:"search-form") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= button_tag(type:"submit", class:"btn btn-success btn-md") do  %>
+              <span class="glyphicon glyphicon-search"></span>Submit
+            <% end %>
+          <% end %>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

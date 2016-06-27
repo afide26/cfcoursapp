@@ -15,6 +15,9 @@ IPHONE 5 to IPHONE 6 PORTRAIT
     margin : 0 auto;
   }
 
+  div.site-nav-width{
+    margin : 3px 5px 3px 5px !important;
+  }
   .panel-title a{
     font-size : .7em;
     letter-spacing : 0;
@@ -79,6 +82,18 @@ IPHONE 5 to IPHONE 6 PORTRAIT
     div.product-container{
       width : 95% !important;
     }
+    
+    div.site-nav-width{
+      margin : 3px 5px 3px 5px !important;
+      border : none;
+    }
+
+    .navbar-right li a,
+    input[type="text"],
+    button[type="submit"],
+    .search-form label{
+      font-size : .8em;
+    }
 
     div.row{
       width : 100%;
@@ -92,9 +107,6 @@ IPHONE 5 to IPHONE 6 PORTRAIT
         font-size : 1.2em;
         line-height : 1.1em;
       }
-    }
-    div.col-sm-2.product-list:nth-child(3n+0){
-      clear : both;
     }
     .page-header{
         padding-bottom : 2px;

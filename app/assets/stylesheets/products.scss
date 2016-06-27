@@ -31,6 +31,27 @@ tr.wideRow{
   color : $lightred !important;
 }
 
+.search-form{
+  margin : 14px 0 0 10px;
+  padding: 0 !important;
+  label{
+    color : $textColor;
+    margin-left: 10px;
+    text-transform : uppercase;
+    letter-spacing : 0.1em;
+    font-weight : normal;
+  }
+  input[type="text"]{
+    border-radius : 5px;
+    height : 22px;
+  }
+  button[type="submit"]{
+    padding : 0 5px 0 5px;
+    margin : -3px 2px 0 2px;
+    text-transform : uppercase;
+    letter-spacing : 0.15em;
+  }
+}
 /*======================
 PRODUCTS INDEX STYLING
 ======================*/
