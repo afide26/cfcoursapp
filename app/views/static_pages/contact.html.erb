@@ -1,11 +1,36 @@
 <div class="pages">
-  <h1>Get In Touch</h1>
-
-  <h3>Reach us using any of the following:</h3>
-
-  <ul>
-    <li>Phone: <a href="tel: +432193250">0432193250</a></li>
-    <li>Email: <a href="mailto: berlinbike@example.com">Bike Berlin</a></li>
-  </ul>
+  <div class="page-header">
+    <h1 class="text-center">Contact Us</h1>
+  </div>
+  <%= render 'layouts/flash' %>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Send us your enquiries</h3>
+      <ul>
+        <li><h4>Phone: <a href="tel: +432193250">0432193250</a></h4></li>
+        <li><h4>Email: <a href="mailto: berlinbike@example.com">Bike Berlin</a></h4></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <h3>Drop us a line and we will get back to you shortly...</h3>
+      <%= form_tag("/static_pages/thank_you") do %>
+        <div class="form-group">
+          <%= label_tag :name, "Your Name" %>
+          <%= text_field_tag :name, nil, class:"form-control", placeholder:"Enter Name" %>
+        </div>
+        <div class="form-group">
+          <%= label_tag :email, "Your Email" %>
+          <%= text_field_tag :email, nil, class:"form-control", placeholder:"Enter Email" %>        
+        </div>
+        <div class="form-group">
+          <%= label_tag :message, "Your Message" %>
+          <%= text_area_tag :message, nil, class:"form-control", rows:7, placeholder:"Enter Message" %>
+        </div>
+        <%= button_tag(type:"submit", class: "btn btn-success btn-md") do %>
+          <span class="glyphicon glyphicon-envelope"></span> Send
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>
 

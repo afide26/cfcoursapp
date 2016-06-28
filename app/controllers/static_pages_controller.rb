@@ -17,4 +17,14 @@ class StaticPagesController < ApplicationController
   def landing_page
     @products = Product.limit(4)
   end
+
+  def thank_you
+    @name = params[:name]
+    @email = params[:email]
+    @message = params[:message]
+    ActionMailer::Base.mail(:from    => @email, 
+                            :to      => "afidedev26@gmail.com",
+                            :subject => "New message from #{@name}",
+                            :body    => @message).deliver_now
+  end
 end

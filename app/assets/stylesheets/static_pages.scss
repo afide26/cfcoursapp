@@ -1,12 +1,17 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
 /*==================*/
 /*Color variables*/
 /*===================*/
 $lightred:rgb(255, 103, 70);
 $textColor : #fffeea;
 $wideRow: rgb(31, 73, 70);
+$wideRowTwo: #449d44;
+
 
 /*==============================
 *******GENERAL STYLING********
@@ -82,7 +87,7 @@ i {
 }
 
 div.site-nav-width{
-  margin : 3px 35px 3px 35px;
+  margin : 0px 35px 0px 35px;
 }
 
 h1,
@@ -124,8 +129,9 @@ div.item > img{
 }
 
 .panel-title a:hover,
-.panel-titel a:active{
+.panel-title a:active{
   text-decoration : none;
+  color : $textColor;
 }
 
 .panel-body{
@@ -145,6 +151,48 @@ div.item > img{
   }
   
 }
+
+/*==================
+Contact Page Styling
+====================*/
+
+button[type="submit"]{
+  padding : 2px 7px;
+  margin : 0 auto;
+  text-transform : uppercase;
+  letter-spacing : 0.15em;
+}
+
+.panel-heading.thank_you{
+  background-color : $wideRowTwo !important;
+}
+
+.panel-title h3{
+  color : $textColor;
+  text-transform : uppercase;
+  letter-spacing : 0.1em;
+}
+
+
+a .glyphicon-envelope{
+  color : $wideRowTwo !important;
+  font-size : 1em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+.glyphicon-envelope:before{
+  margin-top: 4px;
+  margin-bottom : 0;
+}
+
+
+
+
+
+
+
 
 
 

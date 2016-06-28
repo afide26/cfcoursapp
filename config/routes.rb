@@ -4,11 +4,13 @@ Rails.application.routes.draw do
   
   root 'static_pages#landing_page'
 
-  get 'about'   => 'static_pages#about'
+  get 'about'     => 'static_pages#about'
 
-  get 'index'   => 'static_pages#index'
+  get 'index'     => 'static_pages#index'
 
-  get 'contact' => 'static_pages#contact'
+  get 'contact'   => 'static_pages#contact'
 
-  get 'faq'     => 'static_pages#faq'
+  get 'faq'       => 'static_pages#faq'
+
+  post 'static_pages/thank_you'
 end
