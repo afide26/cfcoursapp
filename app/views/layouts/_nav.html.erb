@@ -15,7 +15,14 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= nav_link("Products", products_path) %></li>
         <li><%= nav_link("FAQ", faq_path) %></li>
-        <li><%= nav_link("Contact", contact_path) %></li>   
+        <li><%= nav_link("Contact", contact_path) %></li> 
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%=  link_to 'Sign In', new_user_session_path %>
+          <% end %>
+        </li>  
         <li>
           <%= form_tag("/products", method: "get", class:"search-form") do %>
             <%= label_tag(:q, "Search for:") %>
@@ -25,6 +32,7 @@
             <% end %>
           <% end %>
         </li>
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>

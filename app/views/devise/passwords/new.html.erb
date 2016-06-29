@@ -1,0 +1,24 @@
+<div class="pages">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class="page-header">
+        <h2 class="text-center">Forgot your password?</h2>
+      </div>
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, class:"form-control" %>
+        </div>
+        <div class="actions" style="padding: 0">
+          <%= button_tag(type:"submit", class:"btn btn-warning btn-block") do %>
+            <span class="glyphicon glyphicon-edit"></span> Password Reset
+          <% end %>
+          <br/>
+          <%= render "devise/shared/links" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -40,6 +40,9 @@ body{
   min-height : 100%;
 }
 
+a:hover{
+  text-decoration : none;
+}
 i {
   color : $textColor;
 }
@@ -78,8 +81,6 @@ i {
 #site-navigation{
   background : rgb(31, 73, 70);
 }
-
-
 
 #navbar li a{
   text-transform : uppercase;
@@ -157,7 +158,7 @@ Contact Page Styling
 ====================*/
 
 button[type="submit"]{
-  padding : 2px 7px;
+  padding : 1px 7px;
   margin : 0 auto;
   text-transform : uppercase;
   letter-spacing : 0.15em;
@@ -172,6 +173,7 @@ button[type="submit"]{
   text-transform : uppercase;
   letter-spacing : 0.1em;
 }
+
 
 
 a .glyphicon-envelope{

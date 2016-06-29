@@ -31,15 +31,20 @@ tr.wideRow{
   color : $lightred !important;
 }
 
+/*=====================
+**SEARCH FORM STYLING**
+=======================*/
 .search-form{
   margin : 14px 0 0 10px;
   padding: 0 !important;
   label{
     color : $textColor;
-    margin-left: 10px;
-    text-transform : uppercase;
+    margin-left: 2px;
+    text-transform : capitalize;
     letter-spacing : 0.1em;
     font-weight : normal;
+    font-size : 0.95em;
+    font-style : italic;
   }
   input[type="text"]{
     border-radius : 5px;
@@ -116,11 +121,12 @@ div.pull-right{
   }
 }
 a[role="button"], 
-.button{
+.button,
+.btn{
   text-transform : uppercase;
   letter-spacing : 0.05em;
   border-radius : 15px;
-  padding : 2px 9px 2px 9px;
+  padding : 1px 9px 1px 9px;
   color : $textColor !important;
   margin-bottom : 5px;
 }
