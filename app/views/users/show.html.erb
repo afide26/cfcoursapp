@@ -1,14 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="pages">
+  <div class="row">
+    <div class="col-sm-8 col-offset-sm-2">
+      <p id="notice"><%= notice %></p>
+     <h3>
+        <strong>First name:</strong>
+        <%= @user.first_name %>
+     </h3>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+     <h3>
+        <strong>Last name:</strong>
+        <%= @user.last_name %>
+    </h3>
+    <div class="actions"> 
+      <%= link_to edit_user_path(@user), class:"btn btn-warning" do %>
+        <span class="glyphicon glyphicon-wrench"></span> Edit
+      <% end %>
+      |
+      <%= link_to users_path, class:"btn btn-info" do%>
+        <span class="glyphicon glyphicon-chevron-left"></span> Back
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+
+

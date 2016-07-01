@@ -11,9 +11,9 @@
     </div>
     <div class="actions visible-lg">
       <% if !user_signed_in? %>
-        <%#= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
-          <!-- <i class="glyphicon glyphicon-eye-open"></i> Show -->
-        <%# end %> 
+        <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
+          <i class="glyphicon glyphicon-eye-open"></i> Show
+        <% end %> 
       <% else %>
         <hr class="style-two visible-lg">
         <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>

@@ -16,13 +16,24 @@
         <li><%= nav_link("Products", products_path) %></li>
         <li><%= nav_link("FAQ", faq_path) %></li>
         <li><%= nav_link("Contact", contact_path) %></li> 
-        <li>
-          <% if user_signed_in? %>
-            <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%=  link_to 'Sign In', new_user_session_path %>
-          <% end %>
-        </li>  
+        <% if user_signed_in? %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: black">
+            <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to 'Edit Details',edit_user_registration_path(@user), method: :delete %></li>
+            <li><%= link_to 'All Members', users_path%></li>
+          </ul>
+        </li>
+        <% else %>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: black">
+            <li><%=  link_to 'Sign In', new_user_session_path %></li>
+            <li><%=  link_to 'Register', new_user_registration_path %></li>
+          </ul>
+        </li>
+        <% end %>  
         <li>
           <%= form_tag("/products", method: "get", class:"search-form") do %>
             <%= label_tag(:q, "Search for:") %>

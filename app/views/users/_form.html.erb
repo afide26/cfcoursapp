@@ -1,3 +1,4 @@
+
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -11,15 +12,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+  <div class="form-group">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, autofocus: true, class:"form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
+  <div class="form-group">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class:"form-control"  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <% if @user.new_record? %>
+      <%= button_tag(type:"submit", class:"btn btn-info btn-block") do %>
+        <span class="glyphicon glyphicon-pencil"></span> Sign Up
+      <% end %>
+    <% else %>
+      <%= button_tag(type:"submit", class:"btn btn-danger btn-block") do %>
+        <span class="glyphicon glyphicon-wrench"></span> Update Details
+      <% end %>
+    <% end %>
   </div>
 <% end %>

@@ -1,3 +1,55 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*==================*/
+/*Color variables*/
+/*===================*/
+$lightred:rgb(255, 103, 70);
+$textColor : #fffeea;
+$wideRow: rgb(31, 73, 70);
+
+
+/*========================
+*****USERS NAVIGATION*****
+========================*/
+.dropdown-menu>li{
+  a:hover{
+    background-color : #000;
+  }
+}
+
+a.dropdown-toggle{
+  border-radius : 0 !important;
+}
+/*========================
+*****FLASH MESSAGES*****
+========================*/
+
+.alert-notice {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.btn-block{
+  margin-top : 5px !important;
+}
+
+tbody.users-index{
+  td,
+  th{
+    text-align :center;
+    text-transform : uppercase;
+  }
+}
+
+/*========================
+*****EDIT USER DETAILS*****
+========================*/
+.form-group i {
+  color : $wideRow;
+  text-transform : none;
+  letter-spacing : 0;
+  font-size : .9em;
+}
