@@ -1,4 +1,11 @@
 <div class="product-reviews">
+  <div class="digg-pagination">
+    <div class="page-info pull-right">
+      <%= page_entries_info @comments %>
+    </div>
+      <br/>
+      <%= will_paginate @comments, class:"pull-right" %>
+  </div>
   <% @comments.each do |comment| %>
     <div class="row">
       <hr class="style-two">
