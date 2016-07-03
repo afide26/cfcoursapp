@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160629104639) do
+ActiveRecord::Schema.define(version: 20160703041044) do
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "product_id"
+    t.text     "body"
+    t.integer  "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["product_id"], name: "index_comments_on_product_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
@@ -47,6 +59,8 @@ ActiveRecord::Schema.define(version: 20160629104639) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "firstname"
+    t.string   "lastname"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
