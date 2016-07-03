@@ -1,7 +1,7 @@
 <div class="product-reviews">
   <div class="digg-pagination">
     <div class="page-info pull-right">
-      <%= page_entries_info @comments %>
+      <%= page_entries_info @comments, :model => 'comment' %>
     </div>
       <br/>
       <%= will_paginate @comments, class:"pull-right" %>
