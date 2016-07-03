@@ -33,7 +33,7 @@
                 <% end %>
               </td>
               <td>
-                <%= link_to edit_user_path(user), class:"btn btn-danger", method: :delete, data: {confirm: 'Are you sure?'} do %>
+                <%= link_to user, class:"btn btn-danger", method: :delete, data: {confirm: 'Are you sure?'} do %>
                   <span class="glyphicon glyphicon-trash"></span> Delete
                 <% end %>
             </tr>

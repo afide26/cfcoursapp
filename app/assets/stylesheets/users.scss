@@ -8,6 +8,7 @@
 $lightred:rgb(255, 103, 70);
 $textColor : #fffeea;
 $wideRow: rgb(31, 73, 70);
+$alert : #f2dede;
 
 
 /*========================
@@ -45,6 +46,22 @@ tbody.users-index{
 }
 
 /*========================
+*****ERROR MESSAGES*****
+========================*/
+#error_explanation{
+  border-radius : 5px;
+  background-color :$alert !important;
+  padding : 5px;
+  h2{
+    text-align : center;
+    font-size : 1.2em;
+    letter-spacing : 0.1em;
+  }
+  li{
+    font-size : 1.1em;
+  }
+}
+/*========================
 *****EDIT USER DETAILS*****
 ========================*/
 .form-group i {
@@ -53,3 +70,5 @@ tbody.users-index{
   letter-spacing : 0;
   font-size : .9em;
 }
+
+
