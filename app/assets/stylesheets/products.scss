@@ -60,13 +60,18 @@ tr.wideRow{
 /*======================
 PRODUCTS INDEX STYLING
 ======================*/
-div.col-md-4:nth-child(3n+1){
-  clear : both;
+div.col-md-4{
   margin-bottom : 10px;
   p{
     font-size : 1.2em;
     line-height : 1.1em;
   }
+}
+
+div.product-row{
+  margin : 0 auto;
+  display :flex;
+  flex-wrap : wrap;
 }
 
 div.item img{
