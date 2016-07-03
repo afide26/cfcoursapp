@@ -1,6 +1,13 @@
 #This is the README file for the 
 #[CareerFoundry Web Development Course Rails App](www.careerfoundry.com)
+
 ###There are key learnings for this app
 1. Follow up and build on learnings from the Front End Web section of the course
 2. Build on Ruby knowledge
 3. Familiarize and note down key learnings from the lesssons about creating web applications using the Rails framework.
+
+####Models Used for this application
+1. User model - has_many :orders, has_many :products, has_many :comments
+2. Product model - _belongs_to :users, :orders, has_many :comments,
+3. Order model - _has_many :products_
+4. Comment model - _includes comment and rating attributes_
