@@ -1,0 +1,22 @@
+<div class="new-comments">
+  <% if user_signed_in? %>
+    <h4>Add a product review:</h4>
+    <%= form_for([@product, @product.comments.build]) do |f| %>
+      <div class="form-group">
+        <%= f.label :body, "Comments:" %>
+        <span class="pull-right">
+          <div class="form-group">
+            <div class="rating"></div>
+          </div>
+        </span>
+        <br/>
+        <%= f.text_area :body, class:"form-control", rows:"5", required:true %>
+      </div>
+      <div class="actions">
+        <%= button_tag(type:"submit", class:"btn btn-success btn-md") do %>
+          <span class="glyphicon glyphicon-pencil"></span> Add Comment
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

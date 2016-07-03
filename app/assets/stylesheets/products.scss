@@ -25,7 +25,9 @@ th {
 tr.wideRow{
   background-color : $wideRow !important;
 }
-.form-group {
+.form-group,
+#commenter,
+#product-rating {
   text-transform : uppercase;
   letter-spacing : 0.15em;
   color : $lightred !important;
@@ -79,6 +81,12 @@ div.item img{
   margin : 0 auto;
 }
 
+div#product-footer{
+  .rated[attr="data-score"]{
+    width : 90% !important;
+    margin : 0 auto;
+  }
+}
 div.product-list img{
   width : 75%;
   margin : 0 auto;
