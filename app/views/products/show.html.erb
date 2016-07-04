@@ -1,44 +1,43 @@
-
-<div class="container">
-  <%= render 'layouts/flash' %>
-  <div class="row">
-    <h2><strong>Name:</strong><%= @product.name %></h2>
-    <hr class="style-one"> 
-    <div class="col-sm-3 product-list">
-      <div class="thumbnail">
-        <h4><strong>Colour: </strong><%= @product.colour %></h4>
-        <%= image_tag(@product.image_url, class:'center-block, img-responsive') %>
-        <div class="caption">
-          <div class="price">
-            <h4 class="text-center">Price: <%= number_to_currency(@product.price) %></h4>
+  <div class="container">
+    <div class="row">
+      <%= render 'layouts/flash' %>
+      <div class="page-header">
+        <h2><strong>Name:</strong><%= @product.name %></h2>
+      </div>
+      <div class="col-sm-3 product-list">
+        <div class="thumbnail">
+          <h4><strong>Colour: </strong><%= @product.colour %></h4>
+          <%= image_tag(@product.image_url, class:'center-block, img-responsive') %>
+          <div class="caption">
+            <div class="price">
+              <h4 class="text-center">Price: <%= number_to_currency(@product.price) %></h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-9">
-      <p id="product-rating">Average Rating: <div class="rated" data-score="<%= @product.avg_rating %>"></div></p>
-      <%= simple_format(@product.description) %>
-      <div class="actions">
-        <% if user_signed_in? %>
-          <%= link_to edit_product_path(@product), class:"btn btn-warning btn-xs", role:"button" do %>
-            <i class="glyphicon glyphicon-wrench"></i> Update
-          <% end %> 
-          <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
+      <div class="col-sm-9">
+        <p id="product-rating">Average Rating: <div class="rated" data-score="<%= @product.avg_rating %>"></div></p>
+        <%= simple_format(@product.description) %>
+        <div class="actions">
+          <% if signed_in? && current_user.admin? %>
+            <%= link_to edit_product_path(@product), class:"btn btn-warning btn-xs", role:"button" do %>
+              <i class="glyphicon glyphicon-wrench"></i> Update
+            <% end %> 
+            <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
+              <i class="glyphicon glyphicon-chevron-left"></i> Show Full List
+            <% end %>
+            <%= link_to @product, class:"btn btn-danger btn-xs", role:"button", method: :destroy, data: { confirm: "Are you sure?"} do %>
+              <i class="glyphicon glyphicon-trash"></i> Delete 
+            <% end %>
+          <% else %>
+            <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
             <i class="glyphicon glyphicon-chevron-left"></i> Show Full List
+            <% end %>
           <% end %>
-          <%= link_to @product, class:"btn btn-danger btn-xs", role:"button", method: :destroy, data: { confirm: "Are you sure?"} do %>
-            <i class="glyphicon glyphicon-trash"></i> Delete Product
-          <% end %>
-        <% else %>
-          <%= link_to products_path, class:"btn btn-primary btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-chevron-left"></i> Show Full List
-          <% end %>
-        <% end %>
+        </div>
+        <%= render 'new_comment' %>
+        <hr class="style-two">
+        <%= render 'comments' %>
       </div>
-      <%= render 'new_comment' %>
-      <hr class="style-two">
-      <%= render 'comments' %>
     </div>
   </div>
-
-</div>

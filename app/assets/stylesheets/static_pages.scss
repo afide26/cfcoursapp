@@ -82,6 +82,9 @@ i {
   background : rgb(31, 73, 70);
 }
 
+div.navbar{
+  height : 50px;
+}
 #navbar li a{
   text-transform : uppercase;
   color : $textColor !important;

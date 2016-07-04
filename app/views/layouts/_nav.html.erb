@@ -38,7 +38,7 @@
           <%= form_tag("/products", method: "get", class:"search-form") do %>
             <%= label_tag(:q, "Search for:") %>
             <%= text_field_tag(:q) %>
-            <%= button_tag(type:"submit", class:"btn btn-success btn-md") do  %>
+            <%= button_tag(type:"submit", class:"btn btn-success btn-xs") do  %>
               <span class="glyphicon glyphicon-search"></span>Submit
             <% end %>
           <% end %>
