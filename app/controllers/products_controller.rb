@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :update, :destroy]
+  before_filter :authorize_admin, only: [:create, :edit, :update, :destroy]
+
   # GET /products
   # GET /products.json
   def index
@@ -87,5 +89,10 @@ class ProductsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
+    end
+
+    def authorize_admin
+      return unless !current_user.admin?
+      redirect_to root_path, :alert => "Only admins can create new or update products"
     end
 end
