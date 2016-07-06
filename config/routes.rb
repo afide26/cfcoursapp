@@ -3,12 +3,12 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users
-  
-  resources :products do 
+
+  resources :products do
     resources :comments
   end
   resources :orders, only: [:index, :show, :create, :destroy]
-  
+
   root 'static_pages#landing_page'
 
   get 'about'     => 'static_pages#about'

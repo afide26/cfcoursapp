@@ -17,24 +17,25 @@
         <li><%= nav_link("FAQ", faq_path) %></li>
         <li><%= nav_link("Contact", contact_path) %></li>
         <% if current_user %>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.first_name%><span class="caret"></span></a>
-          <ul class="dropdown-menu" style="background-color: black">
-            <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-            <li><%= link_to 'Edit Details',edit_user_registration_path(@user) %></li>
-            <% if current_user.admin? %>
-            <li><%= link_to 'All Members', users_path%></li>
-            <% end %>
-          </ul>
-        </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.first_name%><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color: black">
+              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+              <li><%= link_to 'Profile', user_path(current_user) %></li>
+              <li><%= link_to 'Edit Details',edit_user_registration_path %></li>
+              <% if current_user.admin? %>
+              <li><%= link_to 'All Members', users_path %></li>
+              <% end %>
+            </ul>
+          </li>
         <% else %>
-        <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
-          <ul class="dropdown-menu" style="background-color: black">
-            <li><%=  link_to 'Sign In', new_user_session_path %></li>
-            <li><%=  link_to 'Not a member?', new_user_registration_path %></li>
-          </ul>
-        </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color: black">
+              <li><%=  link_to 'Sign In', new_user_session_path %></li>
+              <li><%=  link_to 'Not a member?', new_user_registration_path %></li>
+            </ul>
+          </li>
         <% end %>
         <li>
           <%= form_tag("/products", method: "get", class:"search-form") do %>
