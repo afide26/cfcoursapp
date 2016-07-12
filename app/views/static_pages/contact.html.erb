@@ -1,3 +1,4 @@
+<%= provide(:title, "Contact")%>
 <div class="pages">
   <div class="page-header">
     <h1 class="text-center">Contact Us</h1>
@@ -6,9 +7,9 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>Send us your enquiries</h3>
-      <ul>
-        <li><h4>Phone: <a href="tel: +432193250">0432193250</a></h4></li>
-        <li><h4>Email: <a href="mailto: berlinbike@example.com">Bike Berlin</a></h4></li>
+      <ul style="list-style-type: none">
+        <li><h4><span class="glyphicon glyphicon-phone"></span> Phone: <a href="tel: +432193250">0432193250</a></h4></li>
+        <li><h4><span class="glyphicon glyphicon-envelope"></span> Email: <a href="mailto: berlinbike@example.com">Bike Berlin</a></h4></li>
       </ul>
     </div>
     <div class="col-sm-8">
@@ -20,7 +21,7 @@
         </div>
         <div class="form-group">
           <%= label_tag :email, "Your Email" %>
-          <%= text_field_tag :email, nil, class:"form-control", placeholder:"Enter Email" %>        
+          <%= text_field_tag :email, nil, class:"form-control", placeholder:"Enter Email" %>
         </div>
         <div class="form-group">
           <%= label_tag :message, "Your Message" %>

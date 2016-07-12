@@ -1,3 +1,4 @@
+<%= provide(:title, "Welcome to")%>
 <%= render 'layouts/deviseflash' %>
 <div class="pages">
   <div class="page-header">
@@ -19,7 +20,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-       
+
           <div class="item<%= " active" if product == @products.first %>">
             <%= link_to product do %>
               <%= image_tag(product.image_url, class: "img-responsive center-block") %>
@@ -43,4 +44,4 @@
       <span class="sr-only">Next</span>
     </a>
   </div><!--End of Image Carousel -->
-</div>  
+</div>
