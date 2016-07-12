@@ -10,7 +10,12 @@ describe Comment do
    end
 
    it "should not be valid without a rating" do
-    expect(Comment.new(body:"Awesome", user:@user, rating:0)).to_not be_valid
+    expect(Comment.new(body:"Awesome bicycle", user:@user, rating:0)).to_not be_valid
+   end
+
+   it "should have a body with a minimum of 10 characters" do
+    @comment = @product.comments.create(body:"Awesome bicycle", user:@user, rating:0)
+    expect(@comment.body.length).to be(>=10)
    end
   end
 end

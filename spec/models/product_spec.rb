@@ -7,9 +7,9 @@ describe Product do
     before do
       @product = Product.create!(name:"race bicycle", price: 3.00)
       @user = User.create!(:email =>"alan@example.com", :password=> "alanfidelino")
-      @product.comments.create!(rating: 1, user: @user, body: "Just ok!")
-      @product.comments.create!(rating: 3, user: @user, body: "Just ok!")
-      @product.comments.create!(rating: 5, user: @user, body: "Just ok!")
+      @product.comments.create!(rating: 1, user: @user, body: "awesome bicycle!")
+      @product.comments.create!(rating: 3, user: @user, body: "what a great ride!")
+      @product.comments.create!(rating: 5, user: @user, body: "Lovely bicycle!")
     end
 
     it "returns an average rating of comments" do
@@ -24,6 +24,11 @@ describe Product do
 
     it "should not be valid when name is not present" do
       expect(@product).not_to be_valid
+    end
+
+    it "should be valid when name is present" do
+      @product = Product.new(name:"new bike", price:200)
+      expect(@product).to be_valid
     end
   end
 end
