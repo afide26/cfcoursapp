@@ -4,8 +4,7 @@ describe Comment do
   context "when user adds comments" do
 
    before do
-    @user = User.create!(email:"alan@example.com", password:"
-      alanfidelino")
+    @user = FactoryGirl.create(:user)
     @product = Product.create!(name:"BMX Bike", price: 200)
    end
 
