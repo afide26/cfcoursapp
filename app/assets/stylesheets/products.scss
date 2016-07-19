@@ -106,9 +106,33 @@ div.price{
   background-color : $wideRow;
   border-radius : 15px;
   letter-spacing : 0.1em;
+  min-height : 30px;
+  vertical-align: middle;
   h3,h4{
-    padding: 2px auto;
+    padding-top : 3px;
     color : $textColor !important;
+  }
+}
+
+div.col-sm-4.product-list{
+  .thumbnail{
+    border : none;
+  }
+}
+
+div.payment{
+  //margin : 0 0 0 10em;
+  padding : 0;
+}
+
+.stripe-button-el{
+   border-radius : 15px !important;
+   margin : 0 auto !important;
+   padding : 0 !important;
+   width : 100% !important;
+  span{
+    background-image : linear-gradient(#015e94);
+    background : none !important;
   }
 }
 
@@ -133,7 +157,7 @@ div.pull-right{
     background-color : $wideRow;
   }
 }
-a[role="button"], 
+a[role="button"],
 .button,
 .btn{
   text-transform : uppercase;
