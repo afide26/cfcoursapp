@@ -6,3 +6,5 @@
   data-description="<%= truncate(@product.description, length: 40) %>"
   data-amount="<%= stripe_price(@product.price) %>">
 </script>
+
+<%= hidden_field_tag(:product_id, @product.id) %>

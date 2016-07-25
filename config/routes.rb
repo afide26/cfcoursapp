@@ -21,4 +21,6 @@ Rails.application.routes.draw do
   get 'faq'       => 'static_pages#faq'
 
   post 'static_pages/thank_you'
+
+  post 'payments/create'
 end
