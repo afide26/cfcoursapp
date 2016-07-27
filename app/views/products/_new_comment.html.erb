@@ -1,7 +1,7 @@
 <div class="new-comments">
   <% if current_user %>
     <h4>Add a product review:</h4>
-    <%= form_for([@product, @product.comments.build]) do |f| %>
+    <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
       <div class="form-group">
         <%= f.label :body, "Comments:" %>
         <span class="pull-right">

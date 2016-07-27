@@ -1,4 +1,4 @@
-<div class="product-reviews">
+
   <div class="digg-pagination">
     <div class="page-info pull-right">
       <%= page_entries_info @comments, :model => 'comment' %>
@@ -6,19 +6,20 @@
       <br/>
       <%= will_paginate @comments, class:"pull-right" %>
   </div>
-  <% @comments.each do |comment| %>
-    <div class="row">
-      <hr class="style-two">
-      <div class="col-xs-12">
-      <p id="commenter"><%= comment.user.first_name %><small><em> <%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
-      <div class="rated" data-score="<%= comment.rating %>"%></div>
-      <p><%= comment.body %></p>
-      <% if signed_in? && current_user.admin? %>
-        <%= link_to product_comment_path(@product,comment), method: :delete, data: {confirm:"Are you sure"}, class:"btn btn-danger btn-xs pull-right" do %>
-          <span class="glyphicon glyphicon-trash"></span> Delete
-        <% end %>
-      <% end %>
+  <div class="product-reviews">
+    <% @comments.each do |comment| %>
+      <div class="row">
+        <hr class="style-two">
+        <div class="col-xs-12">
+          <p id="commenter"><%= comment.user.first_name %><small><em> <%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+          <div class="rated" data-score="<%= comment.rating %>"%></div>
+          <p><%= comment.body %></p>
+          <% if signed_in? && current_user.admin? %>
+            <%= link_to product_comment_path(@product,comment), method: :delete, data: {confirm:"Are you sure"}, class:"btn btn-danger btn-xs pull-right" do %>
+              <span class="glyphicon glyphicon-trash"></span> Delete
+            <% end %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
