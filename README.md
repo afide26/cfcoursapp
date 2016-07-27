@@ -1,4 +1,4 @@
-#This is the README file for the 
+#This is the README file for the
 #[CareerFoundry Web Development Course Rails App](http://www.careerfoundry.com)
 
 ### The demo application can be found at [afbikeberlin.herokuapp.com](https://afbikeberlin.herokuapp.com/)
@@ -6,6 +6,7 @@
 1. Follow up and build on learnings from the Front End Web section of the course
 2. Build on Ruby knowledge
 3. Familiarize and note down key learnings from the lesssons about creating web applications using the Rails framework.
+4. Applying basic AJAX in Rails to save on page reloads
 
 ####Models Used for this application
 1. User model - has_many :orders, has_many :products, has_many :comments
