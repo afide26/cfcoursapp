@@ -20,6 +20,9 @@ gem 'will_paginate', '~> 3.1.0'
 # Payment Options
 gem 'stripe'
 
+#Webserver
+gem 'puma'
+
 #Security
 gem "brakeman", :require => false
 
