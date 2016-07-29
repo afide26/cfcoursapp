@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :update, :destroy]
   before_filter :authorize_admin, only: [:create, :edit, :update, :destroy]
-
+  respond_to :html, :json
   # GET /products
   # GET /products.json
   def index
@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
         @products = Product.all
       end
     end
+    respond_with @products
   end
 
 
