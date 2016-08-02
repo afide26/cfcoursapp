@@ -1,33 +1,36 @@
 
 <div class="col-sm-2 col-md-4 product-list">
   <%= link_to product  do%>
-    <%= image_tag(product.image_url, data_zoom_image: product.image_url, class:"img-zoom img-responsive") %>
-    <h2><%= product.name %></h2>
-    <% if product.colour.present? %>
-    <h3>Colour:<%= product.colour %></h3>
-    <% end %>
-    <p><%= simple_format(truncate(product.description, length: 300, omission:'....(continued)')) %></p>
-    <div class="price">
-      <h3 class="text-center">Price: <%= number_to_currency(product.price) %></h3>
-    </div>
-    <div class="actions">
-      <% if signed_in? && current_user.admin? %>
-        <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-eye-open"></i> Show Details
-        <% end %> |
-        <%= link_to edit_product_path(product), class:"btn btn-warning btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-wrench"></i> Edit
-        <% end %> |
-        <%= link_to product, class:"btn btn-danger btn-xs", role:"button", method: :delete, data: { confirm: 'Are you sure?' } do%>
-          <i class="glyphicon glyphicon-trash"></i> Trash
-        <% end %>
-      <% else %>
-        <hr class="style-two">
-        <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
-          <i class="glyphicon glyphicon-eye-open"></i> Show Details
-        <% end %>
+    <!-- Start of product caching -->
+    <% cache @product do %>
+      <%= image_tag(product.image_url, data_zoom_image: product.image_url, class:"img-zoom img-responsive") %>
+      <h2><%= product.name %></h2>
+      <% if product.colour.present? %>
+      <h3>Colour:<%= product.colour %></h3>
       <% end %>
-    </div>
-    <hr class="style-two visible-lg">
+      <p><%= simple_format(truncate(product.description, length: 300, omission:'....(continued)')) %></p>
+      <div class="price">
+        <h3 class="text-center">Price: <%= number_to_currency(product.price) %></h3>
+      </div>
+      <div class="actions">
+        <% if signed_in? && current_user.admin? %>
+          <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
+            <i class="glyphicon glyphicon-eye-open"></i> Show Details
+          <% end %> |
+          <%= link_to edit_product_path(product), class:"btn btn-warning btn-xs", role:"button" do %>
+            <i class="glyphicon glyphicon-wrench"></i> Edit
+          <% end %> |
+          <%= link_to product, class:"btn btn-danger btn-xs", role:"button", method: :delete, data: { confirm: 'Are you sure?' } do%>
+            <i class="glyphicon glyphicon-trash"></i> Trash
+          <% end %>
+        <% else %>
+          <hr class="style-two">
+          <%= link_to product, class:"btn btn-info btn-xs", role:"button" do %>
+            <i class="glyphicon glyphicon-eye-open"></i> Show Details
+          <% end %>
+        <% end %>
+      </div>
+      <hr class="style-two visible-lg">
+    <% end %> <!-- End of product caching -->
   <% end %>
 </div>

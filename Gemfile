@@ -25,6 +25,10 @@ gem 'stripe'
 
 #Webserver
 gem 'puma'
+#caching
+gem 'dalli'
+
+gem 'connection_pool'
 
 #Security
 gem "brakeman", :require => false

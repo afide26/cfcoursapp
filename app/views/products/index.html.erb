@@ -10,6 +10,8 @@
 <div class="container product-container">
   <%= render 'layouts/flash' %>
   <div class="row product-row">
-    <%= render @products %>
+    <% cache(cache_key_for_products) do %>
+      <%= render @products %>
+    <% end %>
   </div>
 </div>

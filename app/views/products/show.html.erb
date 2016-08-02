@@ -2,6 +2,8 @@
     <div class="row">
       <%= render 'layouts/flash' %>
       <div class="page-header">
+        <!-- Start of product caching -->
+        <% cache @product do %>
         <h2><strong>Name:</strong><%= @product.name %></h2>
       </div>
       <div class="col-sm-4 product-list">
@@ -19,7 +21,7 @@
             </div>
           </div>
         </div>
-
+        <% end %> <!-- End of product caching -->
       </div>
       <div class="col-sm-8">
         <p id="product-rating">Average Rating: <div class="rated" data-score="<%= @product.avg_rating %>"></div></p>
