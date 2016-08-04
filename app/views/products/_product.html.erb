@@ -1,8 +1,6 @@
 
 <div class="col-sm-2 col-md-4 product-list">
-  <%= link_to product  do%>
-    <!-- Start of product caching -->
-    <% cache @product do %>
+    <%= link_to product  do%>
       <%= image_tag(product.image_url, data_zoom_image: product.image_url, class:"img-zoom img-responsive") %>
       <h2><%= product.name %></h2>
       <% if product.colour.present? %>
@@ -31,6 +29,5 @@
         <% end %>
       </div>
       <hr class="style-two visible-lg">
-    <% end %> <!-- End of product caching -->
-  <% end %>
+    <% end %>
 </div>
