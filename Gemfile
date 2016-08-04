@@ -28,6 +28,12 @@ gem 'puma'
 #caching
 gem 'dalli'
 
+#redis
+gem 'redis-rails'
+
+#performance monitoring
+gem 'newrelic_rpm'
+
 gem 'connection_pool'
 
 #Security
