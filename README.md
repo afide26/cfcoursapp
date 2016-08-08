@@ -1,5 +1,5 @@
 #This is the README file for the
-#![CareerFoundry Logo](https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/175/s300/career-foundry-logo.jpeg)[CareerFoundry Web Development Course Rails App](http://www.careerfoundry.com)
+#![CareerFoundry Logo](https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAYRAAAAJDA1ZGI3NDUxLTgwNTItNDBlNi05N2Y0LWJiZWU4Y2Y4YTQ5NA.png)[CareerFoundry Web Development Course Rails App](http://www.careerfoundry.com)
 
 ### The demo application can be found at [afbikeberlin.herokuapp.com](https://afbikeberlin.herokuapp.com/)
 ###There are key learnings for this app
