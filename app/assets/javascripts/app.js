@@ -4,7 +4,7 @@ var app = angular.module('bikeshop',['ngResource']);
 
 
 // Workaround for turbolinks and jquery
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
   angular.bootstrap(document.body, ['bikeshop']);
 });
 
