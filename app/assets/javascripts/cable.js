@@ -11,16 +11,4 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
-/app/channels/application_cable/channel.rb and add this content:
-module ApplicationCable
-  class Channel < ActionCable::Channel::Base
-  end
-end
-/app/channels/application_cable/connection.rb and add this content:
-module ApplicationCable
-  class Connection < ActionCable::Connection::Base
-  end
-end
-/app/jobs/application_job.rb and add this content:
-class ApplicationJob < ActiveJob::Base
-end
+
