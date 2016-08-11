@@ -1,0 +1,993 @@
+/*======================================
+******IMAGE CAROUSEL STYLING**********
+======================================*/
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*==================*/
+/*Color variables*/
+/*===================*/
+/* line 16, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+div.carousel {
+  margin-top: -5px;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+/* line 22, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+div.item img {
+  padding-bottom: 100px;
+}
+
+/* line 26, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+ol.carousel-indicators {
+  margin-bottom: 10px;
+}
+
+/* line 30, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+div.carousel-caption {
+  padding-top: 20px;
+}
+
+/* line 33, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+div.carousel-caption > h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f4946;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+/* line 42, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+div.carousel-caption > h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f4946;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+/* line 51, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+ol.carousel-indicators li {
+  background-color: #3a3f3e;
+  border: 2px solid #1f4946;
+}
+
+/* line 56, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+  color: #1f4946;
+}
+
+/* line 62, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+#carousel-example-generic {
+  margin-bottom: 10px;
+}
+
+/* line 66, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+.active img {
+  opacity: 0.9;
+}
+
+/* line 71, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+.item .carousel-caption p {
+  font-size: 1.1em !important;
+  color: #fffeea !important;
+  margin-top: 5px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 5px !important;
+  background-color: #1f4946 !important;
+}
+/* line 80, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/carousel.scss */
+.item .carousel-caption h4 {
+  font-size: 1em !important;
+  margin-top: 5px !important;
+  margin-bottom: 1px !important;
+}
+/* line 5, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.new-comments {
+  margin: 0 auto;
+}
+
+/* line 8, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.product-reviews {
+  background-color: rgba(31, 73, 70, 0.035);
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+/*========================
+*****DIGG PAGINATION****
+========================*/
+/* line 19, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */
+}
+
+/* line 23, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 28, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 31, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+
+/* line 37, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+
+/* line 41, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+
+/* line 44, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* line 51, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 55, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 61, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+* html .digg_pagination {
+  height: 1%;
+}
+
+/* line 63, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+
+/* line 66, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+}
+
+/* line 72, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 74, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 76, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 88, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 91, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 94, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default;
+}
+
+/* line 98, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+  padding: 0.2em 0.5em;
+}
+
+/* line 100, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 102, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  color: #ff0084;
+}
+
+/* line 106, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a {
+  border: 1px solid #dddddd;
+  color: #0063dc;
+  text-decoration: none;
+}
+
+/* line 110, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a:hover, .flickr_pagination a:focus {
+  border-color: #003366;
+  background: #0063dc;
+  color: white;
+}
+
+/* line 114, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .page_info {
+  color: #aaaaaa;
+  padding-top: 0.8em;
+}
+
+/* line 117, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .previous_page, .flickr_pagination .next_page {
+  border-width: 2px;
+}
+
+/* line 119, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .previous_page {
+  margin-right: 1em;
+}
+
+/* line 121, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .next_page {
+  margin-left: 1em;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/*==================*/
+/*Color variables*/
+/*===================*/
+/*=============================
+IPHONE 5 to IPHONE 6 PORTRAIT
+=============================*/
+@media screen and (min-width: 320px) and (max-width: 437px) {
+  /* line 14, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .product-list {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  /* line 19, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.site-nav-width {
+    margin: 3px 5px 3px 5px !important;
+  }
+
+  /* line 22, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .panel-title a {
+    font-size: .7em;
+    letter-spacing: 0;
+    margin-left: -10px;
+  }
+
+  /* line 28, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  a span.glyphicon-forward {
+    font-size: .7em;
+  }
+
+  /* line 32, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .panel-body img {
+    display: none;
+  }
+
+  /* line 37, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .page-header {
+    padding-bottom: 2px;
+  }
+  /* line 39, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .page-header h2 {
+    font-size: 1.75em !important;
+    padding: 0;
+  }
+
+  /* line 44, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item img {
+    width: 100% !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* line 50, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .carousel-caption {
+    padding: 0 !important;
+    margin-top: 80px;
+  }
+
+  /* line 55, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .carousel-indicators {
+    margin-top: 50px !important;
+    margin-bottom: 1px !important;
+  }
+
+  /* line 61, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item .carousel-caption p {
+    font-size: 1.1em !important;
+    color: #fffeea !important;
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+    background-color: #1f4946 !important;
+  }
+  /* line 68, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item .carousel-caption h4 {
+    font-size: 1em !important;
+    margin-top: 15px !important;
+    margin-bottom: 1px !important;
+  }
+}
+/*=============================
+      IPAD PORTRAIT
+=============================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 79, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  body {
+    padding-top: 50px !important;
+  }
+
+  /* line 83, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.product-container {
+    width: 95% !important;
+  }
+
+  /* line 86, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  #navigation {
+    height: 60px !important;
+  }
+
+  /* line 89, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.site-nav-width {
+    margin: 3px 5px 3px 5px !important;
+    border: none;
+  }
+
+  /* line 94, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .navbar-right li a,
+  input[type="text"],
+  button[type="submit"],
+  .search-form label {
+    font-size: .65em;
+  }
+
+  /* line 101, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .btn {
+    font-size: .8em;
+  }
+
+  /* line 105, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.row {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 109, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.col-sm-2.product-list {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 113, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  div.col-sm-2.product-list p {
+    font-size: 1.2em;
+    line-height: 1.1em;
+  }
+
+  /* line 118, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .page-header {
+    padding-bottom: 2px;
+  }
+  /* line 120, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .page-header h2 {
+    font-size: 1.75em !important;
+    padding: 0;
+  }
+
+  /* line 125, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item img {
+    width: 80% !important;
+    margin-top: 1px;
+    padding-top: 10px;
+  }
+
+  /* line 131, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .carousel-caption h4 {
+    font-size: 1.2em !important;
+  }
+
+  /* line 135, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .carousel-indicators {
+    margin-top: 1px;
+    margin-bottom: 1px !important;
+  }
+
+  /* line 141, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item p {
+    font-size: 1.1em !important;
+    color: #fffeea !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    background-color: #1f4946 !important;
+  }
+  /* line 148, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/media_queries.scss */
+  .item h4 {
+    font-size: 1.1em !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+  }
+}
+/* line 6, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/orders.scss */
+.orders-index tr > td {
+  text-transform: none !important;
+  font-size: 1.1em;
+}
+/*Place all the styles related to the products controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/*/
+/*==================*/
+/*Color variables*/
+/*===================*/
+/*==================*/
+/*Index Page Styling*/
+/*==================*/
+/* line 18, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+th {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fffeea !important;
+  font-weight: 100;
+}
+
+/* line 26, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+tr.wideRow {
+  background-color: #1f4946 !important;
+}
+
+/* line 29, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.form-group,
+#commenter,
+#product-rating {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ff6746 !important;
+}
+
+/*=====================
+**SEARCH FORM STYLING**
+=======================*/
+/* line 40, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.search-form {
+  margin: 14px 0 0 10px;
+  padding: 0 !important;
+}
+/* line 43, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.search-form label {
+  color: #fffeea;
+  margin-left: 2px;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-size: 0.95em;
+  font-style: italic;
+}
+/* line 52, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.search-form input[type="text"] {
+  border-radius: 5px;
+  height: 22px;
+}
+/* line 56, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.search-form button[type="submit"] {
+  padding: 0 5px 0 5px;
+  margin: -3px 2px 0 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/*======================
+PRODUCTS INDEX STYLING
+======================*/
+/* line 66, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.col-md-4 {
+  margin-bottom: 10px;
+}
+/* line 68, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.col-md-4 p {
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+
+/* line 74, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.product-row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 80, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.item img {
+  width: 55%;
+  margin: 0 auto;
+}
+
+/* line 86, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div#product-footer .rated[attr="data-score"] {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+/* line 91, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.product-list img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 96, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.actions {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+/* line 101, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.actions .btn {
+  margin: 0 auto;
+}
+
+/* line 106, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.price {
+  background-color: #1f4946;
+  border-radius: 15px;
+  letter-spacing: 0.1em;
+  min-height: 30px;
+  vertical-align: middle;
+}
+/* line 112, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.price h3, div.price h4 {
+  padding-top: 3px;
+  color: #fffeea !important;
+}
+
+/* line 119, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.col-sm-4.product-list .thumbnail {
+  border: none;
+}
+
+/* line 124, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.payment {
+  padding: 0;
+}
+
+/* line 129, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.stripe-button-el {
+  border-radius: 15px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+/* line 134, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+.stripe-button-el span {
+  background-image: linear-gradient(#015e94);
+  background: none !important;
+}
+
+/* line 140, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* line 147, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/*===============
+Button Styling
+===============*/
+/* line 157, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+div.pull-right a[role="button"] {
+  background-color: #1f4946;
+}
+
+/* line 161, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/products.scss */
+a[role="button"],
+.button,
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 15px;
+  padding: 1px 9px 1px 9px;
+  color: #fffeea !important;
+  margin-bottom: 5px;
+}
+/*==================*/
+/*Color variables*/
+/*===================*/
+/*==============================
+*******GENERAL STYLING********
+==============================*/
+/* line 20, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+* {
+  font-family: 'Futura', 'Helvetica', Arial, sans-serif !important;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 26, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+div.flash {
+  width: 100% !important;
+  margin: 10px auto;
+}
+
+/* line 31, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 36, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 40, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.container-fluid.page-wrapper {
+  min-height: 100%;
+}
+
+/* line 44, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 47, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+i {
+  color: #fffeea;
+}
+
+/* line 50, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.pages {
+  margin: 0 auto !important;
+  width: 90%;
+  padding: 5px;
+}
+/* line 54, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.pages h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+/* line 60, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.page-header {
+  margin: 5px auto;
+}
+
+/* line 65, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.page-wrapper:after {
+  content: "";
+  display: block;
+}
+
+/* line 70, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.site-footer,
+.page-wrapper:after {
+  height: 50px;
+}
+
+/* line 75, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  background: #1f4946;
+  color: #fffeea;
+  text-align: center;
+  padding: 15px 0 3px 0;
+  margin: -50px 0 auto;
+}
+
+/* line 82, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+#site-navigation {
+  background: #1f4946;
+}
+
+/* line 86, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+div.navbar {
+  height: 50px;
+}
+
+/* line 89, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+#navbar li a {
+  text-transform: uppercase;
+  color: #fffeea !important;
+}
+
+/* line 94, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+div.site-nav-width {
+  margin: 0px 35px 0px 35px;
+}
+
+/* line 98, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+h1,
+h2,
+h3,
+p {
+  color: #34495e;
+}
+
+/* line 105, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+h1,
+.navbar-brand,
+.site-footer {
+  text-transform: uppercase !important;
+  letter-spacing: 0.125em !important;
+}
+
+/* line 111, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  color: #fffeea !important;
+}
+
+/* line 115, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+p {
+  font-size: 1.125em;
+}
+
+/* line 119, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 123, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+div.item > img {
+  width: 680px;
+}
+
+/*==============================
+*******FAQ PAGE STYLING********
+==============================*/
+/* line 132, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-heading {
+  background-color: #1f4946 !important;
+}
+
+/* line 136, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-title a:hover,
+.panel-title a:active {
+  text-decoration: none;
+  color: #fffeea;
+}
+
+/* line 143, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-body ul {
+  float: left;
+}
+/* line 146, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-body img {
+  float: right;
+  width: 35%;
+  margin: 0 auto;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/*==================
+Contact Page Styling
+====================*/
+/* line 164, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+button[type="submit"] {
+  padding: 1px 7px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* line 171, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-heading.thank_you {
+  background-color: #449d44 !important;
+}
+
+/* line 175, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.panel-title h3 {
+  color: #fffeea;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 183, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+a .glyphicon-envelope {
+  color: #449d44 !important;
+  font-size: 1em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 191, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/static_pages.scss */
+.glyphicon-envelope:before {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+/*==================*/
+/*Color variables*/
+/*===================*/
+/*========================
+*****USERS NAVIGATION*****
+========================*/
+/* line 19, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+.dropdown-menu > li a:hover {
+  background-color: #000;
+}
+
+/* line 24, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+a.dropdown-toggle {
+  border-radius: 0 !important;
+}
+
+/*========================
+*****FLASH MESSAGES*****
+========================*/
+/* line 31, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+.alert-notice {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+/* line 37, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+.btn-block {
+  margin-top: 5px !important;
+}
+
+/* line 42, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+tbody.users-index td,
+tbody.users-index th, tbody.orders-index td,
+tbody.orders-index th {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*========================
+*****ERROR MESSAGES*****
+========================*/
+/* line 52, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+#error_explanation {
+  border-radius: 5px;
+  background-color: #f2dede !important;
+  padding: 5px;
+}
+/* line 56, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+#error_explanation h2 {
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+/* line 61, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+#error_explanation li {
+  font-size: 1.1em;
+}
+
+/*========================
+*****EDIT USER DETAILS*****
+========================*/
+/* line 68, /Users/alanfidelino/Desktop/CareerFoundry/Rails Project/cfcourseapp/app/assets/stylesheets/users.scss */
+.form-group i {
+  color: #1f4946;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: .9em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
