@@ -12,6 +12,20 @@ App.product = App.cable.subscriptions.create({channel: "ProductChannel"}, {
     $(".alert.alert-info").show();
     $('.product-reviews').prepend(data.comment);
     refreshRating();
+    console.log(data);
+  },
+
+  listen_to_comments: function(){
+    return this.perform('listen', {
+      product_id: $("[data-product-id]").data("product-id")
+    });
   },
 
 });
+
+
+$(document).on('turbolinks:load', function() {
+  App.product.listen_to_comments();
+});
+
+
