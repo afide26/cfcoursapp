@@ -4,7 +4,10 @@ development:
 test:
   adapter: async
 
-production:
-  adapter: postgresql
-  url: postgres://pucylptydyzfmn:Tf4JkINIwqE-8RTXJRR3I2tBo-@ec2-50-17-253-74.compute-1.amazonaws.com:5432/dcc6besd0h5np2
+# production:
+#   adapter: postgresql
+#   url: postgres://pucylptydyzfmn:Tf4JkINIwqE-8RTXJRR3I2tBo-@ec2-50-17-253-74.compute-1.amazonaws.com:5432/dcc6besd0h5np2
 
+production:
+  adapter: redis
+  url: redis://h:p1d7lkvu65n8lmf4usioudsqjaf@ec2-54-197-242-4.compute-1.amazonaws.com:22519
