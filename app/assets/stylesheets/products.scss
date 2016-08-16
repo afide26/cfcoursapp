@@ -114,6 +114,20 @@ div.price{
   }
 }
 
+div#cable-flash{
+  background-color : #449d44;
+  border-radius : 15px;
+  letter-spacing : 0.1em;
+  height : 35px;
+  padding: 5px;
+  p{
+    color : $textColor !important;
+    font-weight: normal;
+    margin-bottom : 2px;
+    text-align : center;
+  }
+}
+
 div.col-sm-4.product-list{
   .thumbnail{
     border : none;
