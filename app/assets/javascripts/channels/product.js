@@ -9,30 +9,22 @@ App.cable.subscriptions.create({channel: "ProductChannel"}, {
 
   received: function(data) {
     // Called when there's incoming data on the websocket for this channel
-<<<<<<< HEAD
-    $("#cable-flash").show();
-    $(".product-reviews").prepend(data);
-=======
     $(".alert.alert-info").show();
     $('.product-reviews').prepend(data.comment);
     refreshRating();
-    console.log(data);
   },
 
   listen_to_comments: function(){
     return this.perform('listen', {
       product_id: $("[data-product-id]").data("product-id")
     });
->>>>>>> active-job
   },
 });
 
 
-<<<<<<< HEAD
-=======
+
 $(document).on('turbolinks:load', function() {
   App.product.listen_to_comments();
 });
->>>>>>> active-job
 
 
