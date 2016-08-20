@@ -30,7 +30,7 @@ gem 'puma', '~> 3.0'
 gem 'dalli'
 
 #redis
-gem 'redis'
+gem 'redis-rails'
 
 #performance monitoring
 gem 'newrelic_rpm'
