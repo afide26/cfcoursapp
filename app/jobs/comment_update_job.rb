@@ -2,7 +2,7 @@ class CommentUpdateJob < ApplicationJob
   queue_as :default
 
   def perform(comment) #current_user has been removed
-    ProductChannel.broadcast_to comment.product_id, comment: render_comment(comment, comment.user), average_rating: comment.product.average_rating
+    ProductChannel.broadcast_to comment.product_id, comment: render_comment(comment, comment.user), avg_rating: comment.product.avg_rating
   end
 
 private
