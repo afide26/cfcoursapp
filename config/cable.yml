@@ -6,5 +6,5 @@ test:
 
 
 production:
-  adapter: postgresql
-  url: postgres://jygwzmugckneoa:ZQ9gd-XYnVNBIb_a7h_wgnrWFB@ec2-54-243-200-37.compute-1.amazonaws.com:5432/d8hsmq6opprkfl
+  adapter: redis
+  url: <%= ENV['REDISTOGO_URL'] %>
