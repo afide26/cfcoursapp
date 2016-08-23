@@ -7,4 +7,4 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV['REDISTOGO_URL'] %>
+  url: redis://redistogo:f5bb34436bd81e2b273ae59e8979bf4c@viperfish.redistogo.com:11452/
