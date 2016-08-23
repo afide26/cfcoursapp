@@ -27,7 +27,7 @@ gem 'stripe'
 gem 'puma', '~> 3.0'
 
 #caching
-gem 'dalli'
+#gem 'dalli'
 
 #redis
 gem 'redis-rails'

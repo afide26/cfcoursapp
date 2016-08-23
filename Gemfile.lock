@@ -59,7 +59,6 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     connection_pool (2.2.0)
-    dalli (2.7.6)
     debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -282,7 +281,6 @@ DEPENDENCIES
   cancancan
   coffee-rails (~> 4.2)
   connection_pool
-  dalli
   devise
   factory_girl_rails (~> 4.0)
   guard
