@@ -1,4 +1,4 @@
-Rails.application.configure do
+# Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -36,7 +36,7 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
-  # config.action_cable.url = 'wss://afbikeberlin.herokuapp.com/cable'
+  config.action_cable.url = 'wss://afbikeberlinold.herokuapp.com/cable'
   #config.action_cable.allowed_request_origins = [ 'https://afbikeberlin.herokuapp.com', 'http://afbikeberlin.herokuapp.com' ]
   #config.action_cable.allowed_request_origins = [ 'https://afbikeberlin.herokuapp.com', /http:\/\/example.*/ ]
 
