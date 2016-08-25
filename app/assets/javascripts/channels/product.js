@@ -1,4 +1,4 @@
-App.product = App.cable.subscriptions.create({channel: "ProductChannel"}, {
+App.product = App.cable.subscriptions.create("ProductChannel", {
   connected: function() {
     // Called when the subscription is ready for use on the server
   },
