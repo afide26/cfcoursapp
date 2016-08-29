@@ -1,6 +1,5 @@
 
   <div class="container">
-    <% cache @product do %>
     <div class="row" data-product-id="<%= @product.id %>">
       <%= render 'layouts/flash' %>
       <div class="page-header">
@@ -16,7 +15,6 @@
             <div class="price">
               <h4 class="text-center">Price: <%= number_to_currency(@product.price) %></h4>
             </div>
-    <% end %> <!-- End of product caching -->
             <div class="payment">
               <%= form_tag("/payments/create", remote: true) do %>
                <%= render partial: "shared/stripe_checkout_button" %>
